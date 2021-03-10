@@ -4,9 +4,12 @@ namespace Tests\Feature\Http\Post;
 
 use Tests\TestCase;
 use App\Models\Post;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class GetTest extends TestCase
 {
+    use RefreshDatabase;
+
     protected $post;
 
     protected function setUp(): void
