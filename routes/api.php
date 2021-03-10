@@ -15,9 +15,6 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
 Route::prefix('posts')->group(function () {
     Route::post('', [PostController::class, 'create']);
     Route::get('', [PostController::class, 'index']);
