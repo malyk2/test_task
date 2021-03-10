@@ -15,4 +15,9 @@ class PostController extends Controller
 
         return new DetailResource($post);
     }
+
+    public function get(Post $post, Request $request)
+    {
+        return new DetailResource($post);
+    }
 }
